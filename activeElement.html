@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document.activeElement Example</title>
+  </head>
+  <body>
+    <input type="text" id="input1" placeholder="Focus me" />
+    <input type="text" id="input2" placeholder="Or focus me" />
+    <button id="checkFocus">Check Focus</button>
+
+    <script>
+      document
+        .getElementById(id)
+        .document.getElementById("checkFocus")
+        .addEventListener("click", function () {
+          let activeElem = document.activeElement;
+          console.log(document.activeElement);
+
+          console.log("The currently focused element is:", activeElem);
+          console.log("Element ID:", activeElem.id);
+        });
+    </script>
+  </body>
+</html>

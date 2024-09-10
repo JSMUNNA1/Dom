@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document.referrer Example</title>
+  </head>
+  <body>
+    <h1>document.referrer Example</h1>
+    <p>Referrer URL: <span id="referrerDisplay"></span></p>
+
+    <script>
+      // Access the referrer URL
+      let referrer = document.referrer;
+
+      // Display the referrer URL
+      document.getElementById("referrerDisplay").textContent =
+        referrer || "No referrer information available.";
+    </script>
+  </body>
+</html>

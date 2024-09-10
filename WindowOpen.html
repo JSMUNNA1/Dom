@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="openWin()">open</button>
+    <button onclick="closewin()">close</button>
+    <script>
+      let myWin;
+      function openWin() {
+        document.open("https://www.github.com", false, "noopener=true");
+      }
+      function closewin() {
+        myWin.close();
+      }
+    </script>
+  </body>
+</html>

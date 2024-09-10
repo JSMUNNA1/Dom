@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parent">
+      yes
+      <span id="child">hi i am child</span>
+    </div>
+    <script>
+      let parentNode = document.querySelector("#child").parentNode;
+      let childNode = document.querySelector("#child");
+
+      let newChild = document.createElement("p");
+      newChild.innerHTML = `I am before child`;
+
+      parentNode.replaceChild(newChild, childNode);
+    </script>
+  </body>
+</html>

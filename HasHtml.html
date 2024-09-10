@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="log">Focus check results are shown here.</p>
+    <button id="newWindow">Open new window</button>
+    <script>
+      console.log(document.hasFocus());
+
+      const body = document.querySelector("body");
+      const log = document.getElementById("log");
+
+      function checkDocumentFocus() {
+        if (document.hasFocus()) {
+          log.textContent = "This document has focus.";
+          body.style.background = "white";
+        } else {
+          log.textContent = "This document does not have focus.";
+          body.style.background = "gray";
+        }
+      }
+      function openWindow() {
+        window.open(
+          "https://developer.mozilla.org/",
+          "MDN",
+          "width=640,height=320,left=150,top=150"
+        );
+      }
+      document
+        .getElementById("newWindow")
+        .addEventListener("click", openWindow);
+      setInterval(checkDocumentFocus, 300);
+
+      console.log(document.documentElement);
+      document.addEventListener("click", () => {
+        console.log(document.hasFocus());
+      });
+    </script>
+  </body>
+</html>

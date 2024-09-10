@@ -1,0 +1,128 @@
+Element Methods
+
+1. element.getAttribute(attributeName)
+2. element.setAttribute(attributeName, value)
+3. element.removeAttribute(attributeName)
+4. element.hasAttribute(attributeName)
+5. element.appendChild(newChild)
+6. element.insertBefore(newNode, referenceNode)
+7. element.replaceChild(newChild, oldChild)
+8. element.removeChild(child)
+9. element.cloneNode(deep)
+10. element.querySelector(selector)
+11. element.querySelectorAll(selector)
+12. element.classList.add(className)
+13. element.classList.remove(className)
+14. element.classList.toggle(className)
+15. element.classList.contains(className)
+16. element.getElementsByClassName(className)
+17. element.getElementsByTagName(tagName)
+18. element.firstChild
+19. element.lastChild
+20. element.childNodes
+
+Document Methods
+
+1. document.getElementById(id)
+2. document.getElementsByClassName(className)
+3. document.getElementsByTagName(tagName)
+4. document.querySelector(selector)
+5. document.querySelectorAll(selector)
+6. document.createElement(tagName)
+7. document.createTextNode(text)
+8. document.createDocumentFragment()
+9. document.getElementsByName(name)
+10. document.documentElement
+11. document.body
+12. document.open()
+13. document.close()
+14. document.write(text)
+15. document.clear()
+16. document.importNode(node, deep)
+17. document.adoptNode(node)
+18. document.normalize()
+19. document.hasFocus()
+20. document.activeElement
+
+
+Element Properties
+
+1. id
+2. className
+3. classList
+4. innerHTML
+5. outerHTML
+6. textContent
+7. style
+8. children
+9. childNodes
+10. firstChild
+11. lastChild
+12. parentNode
+13. previousSibling
+14. nextSibling
+15. offsetWidth
+16. offsetHeight
+17. offsetTop
+18. offsetLeft
+19. scrollTop
+20. scrollLeft
+
+Document Properties
+
+1. documentElement
+2. body
+3. head
+4. title
+5. documentURI
+6. documentType
+7. documentMode
+8. documentBaseURI
+9. compatMode
+10. defaultView
+11. location
+12. referrer
+13. domain
+14. URL
+15. activeElement
+16. lastModified
+17. cookie
+18. visibilityState
+19. readyState
+20. anchors
+
+Summary of Key Global Objects Similar to window:
+
+1. document: Represents the DOM.
+2. navigator: Provides browser-specific information.
+3. location: Represents and manipulates the current URL.
+4. history: Interacts with the browser's session history.
+5. screen: Contains information about the user's display.
+6. console: For logging and debugging.
+7. localStorage / sessionStorage: For storing data locally.
+
+Document Methods for Updating and Creating DOM Tree
+
+1. createElement()
+2. createTextNode()
+3. createDocumentFragment()
+4. write()
+5. open()
+6. close()
+7. importNode()
+8. adoptNode()
+
+Element Methods for Updating and Creating DOM Tree
+
+1. appendChild()
+2. insertBefore()
+3. replaceChild()
+4. removeChild()
+5. setAttribute()
+6. removeAttribute()
+7. innerHTML (as a setter)
+8. outerHTML (as a setter)
+9. textContent (as a setter)
+10.className (as a setter)
+
+These methods and properties are specifically used to create or update parts of the DOM tree.

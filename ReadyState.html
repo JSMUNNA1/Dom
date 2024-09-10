@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document.readyState Example</title>
+  </head>
+  <body>
+    <a href="refferal.html">kkkk</a>
+    <h1>document.readyState Example</h1>
+    <p>Current readyState: <span id="readyState"></span></p>
+
+    <script>
+      console.log(document.readyState);
+
+      function updateReadyState() {
+        setTimeout(console.log, 4000, document.readyState);
+        let readyState = document.readyState;
+        document.getElementById("readyState").textContent = readyState;
+      }
+
+      // Update readyState on load
+      document.addEventListener("DOMContentLoaded", updateReadyState);
+      window.addEventListener("load", updateReadyState);
+
+      // Initial display
+      updateReadyState();
+    </script>
+  </body>
+</html>

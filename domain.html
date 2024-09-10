@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document.domain Example</title>
+  </head>
+  <body>
+    <h1>document.domain Example</h1>
+    <p>Current Domain: <span id="domainDisplay"></span></p>
+
+    <script>
+      // Access the domain of the document
+      let domain = document.domain;
+      document.domain = "www.amazon.in"; //urlexception gives
+      console.log(document.domain);
+
+      // Display the domain
+      document.getElementById("domainDisplay").textContent = domain;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>scrollLeft Example</title>
+    <style>
+      #scrollDiv {
+        width: 200px;
+        height: 100px;
+        overflow: scroll;
+        border: 1px solid black;
+        /* white-space: nowrap; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="scrollDiv">
+      <span
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto adipisci
+        molestiae et quae ullam. Odit ut laudantium iste voluptatum rerum
+        reiciendis nobis magni eaque maxime sit, nulla unde labore ipsam!
+        Eveniet obcaecati, consectetur praesentium quia quidem ea delectus
+        officiis harum non omnis nostrum reprehenderit, blanditiis beatae alias
+        corporis deserunt molestiae mollitia architecto accusamus, sapiente
+        dolor est ipsam eaque. Eaque, impedit. Tenetur quae ad magni autem
+        nesciunt ex velit alias quaerat voluptatibus mollitia aliquam ab fugit
+        magnam, error corporis, perferendis nobis aliquid animi dolorem
+        reprehenderit? Obcaecati facere placeat alias esse corporis! Quam
+        molestiae iste eius vel totam esse nesciunt non voluptas rerum,
+        voluptatibus cumque tempora quos animi obcaecati architecto neque sit,
+        adipisci vero. Sit molestias non ratione eligendi perferendis delectus
+        doloremque! Consectetur amet recusandae facilis, reiciendis, blanditiis
+        excepturi dolores libero, iusto eos deserunt aliquid cum atque porro
+        nemo. Cum dolor modi error porro, suscipit blanditiis nam reiciendis
+        nobis in, quasi aliquam. Eveniet tempore dolorem, corrupti asperiores
+        praesentium ipsam nostrum optio ipsa repudiandae, odio unde voluptatum
+        delectus, suscipit vel dolore fugit exercitationem molestiae aspernatur
+        dolorum nam. Impedit doloremque a quod dicta amet. Minus excepturi quis
+        cumque eaque, saepe soluta repellendus? Ullam reiciendis consectetur
+        autem blanditiis earum assumenda. Voluptatum aliquid possimus nisi nulla
+        fugit magnam quos porro accusantium vel, dolores dolorem esse
+        consequuntur. Harum nemo architecto tempore quo consequuntur assumenda
+        vero illo, debitis ad voluptatum id quidem laboriosam non voluptates nam
+        eius ratione provident exercitationem praesentium? Dolor quas alias,
+        distinctio rem ducimus libero? Inventore praesentium similique fugiat at
+        voluptatum doloremque perferendis? Vitae numquam nesciunt quo ab ipsa
+        voluptates accusantium aliquam ea eum, laudantium, optio libero.
+        Quisquam, iure reiciendis! Dolorem iste mollitia hic ipsa? Nisi optio
+        saepe ea blanditiis enim tempore quas nulla atque explicabo illum? Ad
+        aspernatur, obcaecati saepe dolorum, quis adipisci beatae rerum nihil,
+        maiores quae illum temporibus eum quod nisi quisquam!</span
+      >
+    </div>
+    <button>Scroll to Left</button>
+
+    <script>
+      let scrollDiv = document.getElementById("scrollDiv");
+
+      // Log the current scrollLeft value
+      console.log(scrollDiv.scrollLeft); // Outputs the horizontal scroll distance
+
+      // Function to scroll to the left
+      let scroller = 100;
+
+      document.querySelector("button").addEventListener("click", scrollToLeft);
+      function scrollToLeft() {
+        console.log("hi");
+
+        scrollDiv.scrollTop = scroller;
+        scroller += 100;
+      }
+      //scrollToLeft();
+    </script>
+  </body>
+</html>

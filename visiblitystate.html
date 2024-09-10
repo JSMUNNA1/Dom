@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document.visibilityState Example</title>
+  </head>
+  <body>
+    <h1>document.visibilityState Example</h1>
+    <p>Visibility State: <span id="visibilityState"></span></p>
+    <h4 hidden></h4>
+
+    <script>
+      // Function to update visibility state display
+      console.log(document.visibilityState);
+
+      function updateVisibilityState() {
+        let visibilityState = document.visibilityState;
+        document.getElementById("visibilityState").textContent =
+          visibilityState;
+      }
+
+      // Set up event listener for visibility change
+      document.addEventListener("visibilitychange", updateVisibilityState);
+
+      // Initial display
+      updateVisibilityState();
+    </script>
+  </body>
+</html>
